@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/ez/Documents/Egor/testapp/car/Audi/CarParts/APICarParts.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Car/Car.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:EngineB31/EngineB31.xcodeproj">
+   </FileRef>
+</Workspace>
