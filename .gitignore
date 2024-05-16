@@ -1,0 +1,53 @@
+# OS X temporary files
+.DS_Store
+*.swp
+*.lock
+.profile
+
+# Xcode temporary files
+*~.nib
+
+# Objective-C / Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode build files
+DerivedData/
+build/
+Builds/
+*xcworkspace/xcuserdata/*
+
+# Xcode private settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+xcuserdata
+!xcschemes
+!xcshareddata
+*.moved-aside
+*.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+*xcworkspace/xcuserdata/*
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# CocoaPods
+!Pods/
+!Podfile
+!Podfile.lock
+!Manifest.lock
+
+Templates
+.TemplatesInstalled
+.artifacts
+
