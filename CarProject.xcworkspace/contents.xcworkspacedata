@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ez/Documents/Egor/testapp/car/Audi/CarParts/APICarParts.xcodeproj">
+      location = "group:CarParts/APICarParts.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Car/Car.xcodeproj">
