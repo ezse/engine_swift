@@ -81,6 +81,21 @@
                   endingLineNumber = "18"
                   offsetFromSymbolStart = "144">
                </Location>
+               <Location
+                  uuid = "FE5599C3-53E5-4CA4-AEED-6B10F16F543F - 3d6ab158310d870a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Car.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Car"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ez/Documents/Egor/testapp/Engine_swift/Car/Car/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "144">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
