@@ -26,6 +26,6 @@ class MockedEngineProvider: EngineProviding {
     }
 }
 
-// Engine impl wrapper
+// Engine impl wrapper (To get rid off importing API 'APICarParts' everywhere in Car project)
 protocol Engine: APIEngineInterface{}
 extension EngineB31: Engine{}

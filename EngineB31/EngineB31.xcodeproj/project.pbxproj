@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271896302C00888E00F76602 /* CPlusPlusEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279EC2192C00859D00F33C13 /* CPlusPlusEngine.framework */; };
+		271896312C0088AA00F76602 /* CPlusPlusEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 279EC2192C00859D00F33C13 /* CPlusPlusEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27DA9C252BD6CB77006EBD72 /* APICarParts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA9C242BD6CB77006EBD72 /* APICarParts.framework */; };
 		27DC76302BD6CC1E00CD7367 /* APICarParts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA9C242BD6CB77006EBD72 /* APICarParts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27E4388C2BCF018000C98349 /* EngineB31.docc in Sources */ = {isa = PBXBuildFile; fileRef = 27E4388B2BCF018000C98349 /* EngineB31.docc */; };
@@ -19,6 +21,16 @@
 		27E439032BD0584100C98349 /* EngineProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E439022BD0584100C98349 /* EngineProcess.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		279EC2182C00859D00F33C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279EC2142C00859D00F33C13 /* CPlusPlusEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 279EC20A2C00859700F33C13;
+			remoteInfo = CPlusPlusEngine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		27E438DC2BCF047C00C98349 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				271896312C0088AA00F76602 /* CPlusPlusEngine.framework in Embed Frameworks */,
 				27DC76302BD6CC1E00CD7367 /* APICarParts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -34,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		279EC2142C00859D00F33C13 /* CPlusPlusEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CPlusPlusEngine.xcodeproj; path = CPlusPlusEngine/CPlusPlusEngine/CPlusPlusEngine.xcodeproj; sourceTree = "<group>"; };
 		27DA9C242BD6CB77006EBD72 /* APICarParts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APICarParts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E438872BCF018000C98349 /* EngineB31.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EngineB31.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E4388A2BCF018000C98349 /* EngineB31.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineB31.h; sourceTree = "<group>"; };
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271896302C00888E00F76602 /* CPlusPlusEngine.framework in Frameworks */,
 				27DA9C252BD6CB77006EBD72 /* APICarParts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,9 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		279EC2152C00859D00F33C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279EC2192C00859D00F33C13 /* CPlusPlusEngine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		27E4387D2BCF018000C98349 = {
 			isa = PBXGroup;
 			children = (
+				279EC2142C00859D00F33C13 /* CPlusPlusEngine.xcodeproj */,
 				27E438892BCF018000C98349 /* EngineB31 */,
 				27E438882BCF018000C98349 /* Products */,
 				27E438D82BCF047C00C98349 /* Frameworks */,
@@ -160,6 +184,7 @@
 				TargetAttributes = {
 					27E438862BCF018000C98349 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -174,12 +199,28 @@
 			mainGroup = 27E4387D2BCF018000C98349;
 			productRefGroup = 27E438882BCF018000C98349 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 279EC2152C00859D00F33C13 /* Products */;
+					ProjectRef = 279EC2142C00859D00F33C13 /* CPlusPlusEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27E438862BCF018000C98349 /* EngineB31 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		279EC2192C00859D00F33C13 /* CPlusPlusEngine.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CPlusPlusEngine.framework;
+			remoteRef = 279EC2182C00859D00F33C13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		27E438852BCF018000C98349 /* Resources */ = {
@@ -337,6 +378,7 @@
 		27E438912BCF018000C98349 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -359,6 +401,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +410,7 @@
 		27E438922BCF018000C98349 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -7,13 +7,16 @@
 
 import Foundation
 import APICarParts
+import CPlusPlusEngine
 
 public class EngineB31: APIEngineInterface {
 
+    // Just playing with C++ engine
+    private let cPlusEngine: OldEngineWrapper?
+    
     private let engineConfiguration: EngineConfiguration
     private let engine: Engine
     private let converter: EngineStatusConverter = EngineStatusConverter()
-
     public func sendCommand(command: APIEngineCommand) {
         switch command {
         case .on:
@@ -53,5 +56,9 @@ public class EngineB31: APIEngineInterface {
                                                        minimumPowerPercentage: 5)
 
         self.engine = Engine(withConfiguration: self.engineConfiguration)
+
+        // Again playing with C++ engine
+        self.cPlusEngine = OldEngineWrapper()
+        self.cPlusEngine?.wroom()
     }
 }
