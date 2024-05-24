@@ -71,6 +71,15 @@ class EngineProcess: Thread {
         }
         queue.waitUntilAllOperationsAreFinished()
         print("total outcomePower from cylinders -> ", weakSelf?.outcomePower ?? 0)
+       
+        let cylinders = weakSelf?.cylinders ?? []
+
+        var cylinderStates = ""
+        for (index, cylinder) in cylinders.enumerated() {
+            cylinderStates.append("cylinder \(index) -> \(cylinder.getCurrentCycle())\n" )
+        }
+
+        print(cylinderStates)
         weakSelf?.outcomePower = 0
     }
 }

@@ -20,7 +20,7 @@ class EngineFactory {
             let engineProvider = EngineProvider()
             let dataViewModel = EngineDataViewModel(engineProviding: engineProvider)
             let engine = dataViewModel.performEnginePreparation()
-            print("Fetched Data:", engine)
+            self.engine = engine
             return engine
         }
     }

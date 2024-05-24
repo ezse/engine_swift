@@ -13,11 +13,13 @@
 *.dSYM.zip
 *.dSYM
 
+
 # Xcode build files
 DerivedData/
 build/
 Builds/
 *xcworkspace/xcuserdata/*
+*/xcworkspace/xcuserdata/*
 
 # Xcode private settings
 *.pbxuser

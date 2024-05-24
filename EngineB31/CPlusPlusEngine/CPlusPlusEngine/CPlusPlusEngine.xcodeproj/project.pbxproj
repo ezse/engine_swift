@@ -101,8 +101,8 @@
 			files = (
 				279EC20E2C00859700F33C13 /* CPlusPlusEngine.h in Headers */,
 				2718961B2C00866400F76602 /* OldEngineWrapper.h in Headers */,
-				2718962F2C0086E600F76602 /* OldEngine.hpp in Headers */,
 				271896332C0091E400F76602 /* SystemMonitor.h in Headers */,
+				2718962F2C0086E600F76602 /* OldEngine.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
