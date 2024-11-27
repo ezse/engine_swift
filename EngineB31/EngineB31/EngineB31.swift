@@ -11,6 +11,8 @@ import CPlusPlusEngine
 
 public class EngineB31: APIEngineInterface {
 
+    
+   
     // Just playing with C++ engine
     private let cPlusEngine: OldEngineWrapper?
     
@@ -49,6 +51,38 @@ public class EngineB31: APIEngineInterface {
         return res
     }
     
+    public func getOutComePower() -> Float {
+        return self.engine.getOutComePower()
+    }
+
+    public func subsribeToRPMChanges(_ handler: @escaping (Float) -> Void){
+        self.engine.subsribeToRPMChanges(handler)
+    }
+    
+    public func subsribeToCylinderStates(_ handler: @escaping ([APICylinderStatus]) -> Void) {
+        
+        self.engine.subscribeToCylinderStatesUpdates { cycles in
+            
+            var outCycles: [APICylinderStatus] = []
+            for cycle in cycles {
+                
+                var element: APICylinderStatus = .fuelCombustion
+                switch cycle {
+                case .fuelCombustion:
+                    element = .fuelCombustion
+                case .fuelCompression:
+                    element = .fuelCompression
+                case .fuelIntake:
+                    element = .fuelIntake
+                case .gasExhaust:
+                    element = .gasExhaust
+                }
+                outCycles.append(element)
+            }
+            handler(outCycles)
+        }
+    }
+
     public init () {
 
         self.engineConfiguration = EngineConfiguration(cylinderCount: 4,

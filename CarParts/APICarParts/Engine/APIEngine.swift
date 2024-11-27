@@ -11,6 +11,10 @@ public enum APIEngineStatus {
     case running, stopped, on, off, ready, notReady, error, warning
 }
 
+public enum APICylinderStatus {
+    case fuelCombustion, gasExhaust, fuelIntake, fuelCompression
+}
+
 public enum APIEngineCommand {
     case on, off, start, stop
 }
@@ -20,4 +24,7 @@ public protocol APIEngineInterface {
     func sendCommand(command: APIEngineCommand)
     func getStatus() -> [APIEngineStatus]
     func setPower(percentage: Float) -> ([APIEngineStatus], Float)
+    func getOutComePower() -> Float
+    func subsribeToRPMChanges(_ handler: @escaping (Float) -> Void)
+    func subsribeToCylinderStates(_ handler: @escaping ([APICylinderStatus]) -> Void)
 }

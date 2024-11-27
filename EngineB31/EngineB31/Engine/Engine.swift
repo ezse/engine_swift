@@ -81,6 +81,18 @@ class Engine {
         self.process?.updatePower(self.powerPercentage)
         return self.powerPercentage
     }
+    
+    func getOutComePower() -> Float {
+        return self.process?.getCurrentPower() ?? 0
+    }
+
+    func subsribeToRPMChanges(_ handler: @escaping (Float) -> Void){
+        self.process?.subsribeToRPMChanges(handler)
+    }
+
+    func subscribeToCylinderStatesUpdates(_ handler: @escaping ([CylinderCycle]) -> Void) {
+        self.process?.subscribeToCylinderStatesUpdates(handler)
+    }
 
     func getStatus() -> EngineStatus {
         self.status

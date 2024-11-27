@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270273DE2CF74FB200E60C64 /* CylinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270273DD2CF74FB100E60C64 /* CylinderView.swift */; };
+		270273E52CF76D5700E60C64 /* PistonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270273E42CF76D5300E60C64 /* PistonView.swift */; };
+		270273E82CF76DD400E60C64 /* CylinderConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270273E72CF76DD000E60C64 /* CylinderConverter.swift */; };
 		2738FBEB2BF6A7E00017E692 /* APICarParts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27DA9C262BD6CB8A006EBD72 /* APICarParts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2738FBED2BF6A8250017E692 /* APICarParts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738FBEC2BF6A8250017E692 /* APICarParts.framework */; };
 		27DC76342BD6CD8B00CD7367 /* EngineDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC76332BD6CD8B00CD7367 /* EngineDataViewModel.swift */; };
 		27DC76362BD6CDAA00CD7367 /* EngineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC76352BD6CDAA00CD7367 /* EngineFactory.swift */; };
 		27E438A02BCF01CF00C98349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E4389F2BCF01CF00C98349 /* AppDelegate.swift */; };
 		27E438A22BCF01CF00C98349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E438A12BCF01CF00C98349 /* SceneDelegate.swift */; };
-		27E438A42BCF01CF00C98349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E438A32BCF01CF00C98349 /* ViewController.swift */; };
-		27E438A72BCF01CF00C98349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E438A52BCF01CF00C98349 /* Main.storyboard */; };
+		27E438A42BCF01CF00C98349 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E438A32BCF01CF00C98349 /* MainView.swift */; };
 		27E438A92BCF01D000C98349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E438A82BCF01D000C98349 /* Assets.xcassets */; };
 		27E438AC2BCF01D000C98349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E438AA2BCF01D000C98349 /* LaunchScreen.storyboard */; };
 		27E438B92BCF029A00C98349 /* EngineB31.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E438B82BCF029A00C98349 /* EngineB31.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270273DD2CF74FB100E60C64 /* CylinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderView.swift; sourceTree = "<group>"; };
+		270273E42CF76D5300E60C64 /* PistonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PistonView.swift; sourceTree = "<group>"; };
+		270273E72CF76DD000E60C64 /* CylinderConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CylinderConverter.swift; sourceTree = "<group>"; };
 		2738FBEC2BF6A8250017E692 /* APICarParts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APICarParts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DA9C262BD6CB8A006EBD72 /* APICarParts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APICarParts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DC76332BD6CD8B00CD7367 /* EngineDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineDataViewModel.swift; sourceTree = "<group>"; };
@@ -45,8 +50,7 @@
 		27E4389C2BCF01CF00C98349 /* Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Car.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E4389F2BCF01CF00C98349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E438A12BCF01CF00C98349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27E438A32BCF01CF00C98349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27E438A62BCF01CF00C98349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27E438A32BCF01CF00C98349 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		27E438A82BCF01D000C98349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27E438AB2BCF01D000C98349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E438AD2BCF01D000C98349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +71,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270273E12CF759AF00E60C64 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				27E4389F2BCF01CF00C98349 /* AppDelegate.swift */,
+				27E438A12BCF01CF00C98349 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		270273E22CF759BA00E60C64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27E438A32BCF01CF00C98349 /* MainView.swift */,
+				270273E42CF76D5300E60C64 /* PistonView.swift */,
+				270273DD2CF74FB100E60C64 /* CylinderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		270273E62CF76DC400E60C64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				270273E72CF76DD000E60C64 /* CylinderConverter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		27E438932BCF01CF00C98349 = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +118,13 @@
 		27E4389E2BCF01CF00C98349 /* Car */ = {
 			isa = PBXGroup;
 			children = (
-				27E439042BD06BD000C98349 /* DI */,
-				27E4389F2BCF01CF00C98349 /* AppDelegate.swift */,
-				27E438A12BCF01CF00C98349 /* SceneDelegate.swift */,
-				27E438A32BCF01CF00C98349 /* ViewController.swift */,
-				27E438A52BCF01CF00C98349 /* Main.storyboard */,
+				270273E62CF76DC400E60C64 /* Helpers */,
 				27E438A82BCF01D000C98349 /* Assets.xcassets */,
 				27E438AA2BCF01D000C98349 /* LaunchScreen.storyboard */,
 				27E438AD2BCF01D000C98349 /* Info.plist */,
+				270273E12CF759AF00E60C64 /* AppDelegates */,
+				27E439042BD06BD000C98349 /* DI */,
+				270273E22CF759BA00E60C64 /* Views */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -180,7 +210,6 @@
 			files = (
 				27E438AC2BCF01D000C98349 /* LaunchScreen.storyboard in Resources */,
 				27E438A92BCF01D000C98349 /* Assets.xcassets in Resources */,
-				27E438A72BCF01CF00C98349 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27DC76362BD6CDAA00CD7367 /* EngineFactory.swift in Sources */,
-				27E438A42BCF01CF00C98349 /* ViewController.swift in Sources */,
+				27E438A42BCF01CF00C98349 /* MainView.swift in Sources */,
+				270273DE2CF74FB200E60C64 /* CylinderView.swift in Sources */,
+				270273E52CF76D5700E60C64 /* PistonView.swift in Sources */,
 				27E439062BD06BDF00C98349 /* EngineProvider.swift in Sources */,
 				27E438A02BCF01CF00C98349 /* AppDelegate.swift in Sources */,
+				270273E82CF76DD400E60C64 /* CylinderConverter.swift in Sources */,
 				27DC76342BD6CD8B00CD7367 /* EngineDataViewModel.swift in Sources */,
 				27E438A22BCF01CF00C98349 /* SceneDelegate.swift in Sources */,
 			);
@@ -203,14 +235,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27E438A52BCF01CF00C98349 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27E438A62BCF01CF00C98349 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		27E438AA2BCF01D000C98349 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +376,6 @@
 				INFOPLIST_FILE = Car/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,7 +402,6 @@
 				INFOPLIST_FILE = Car/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
